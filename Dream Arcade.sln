@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dream Arcade.CSharp.Plugins", "Dream Arcade.CSharp.Plugins.csproj", "{53382DC1-3B0D-317D-A472-3F6AE92A681F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dream Arcade.CSharp.Editor", "Dream Arcade.CSharp.Editor.csproj", "{63A6E2C1-3A1D-A127-0126-EB89645B39AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53382DC1-3B0D-317D-A472-3F6AE92A681F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53382DC1-3B0D-317D-A472-3F6AE92A681F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53382DC1-3B0D-317D-A472-3F6AE92A681F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53382DC1-3B0D-317D-A472-3F6AE92A681F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A6E2C1-3A1D-A127-0126-EB89645B39AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A6E2C1-3A1D-A127-0126-EB89645B39AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A6E2C1-3A1D-A127-0126-EB89645B39AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A6E2C1-3A1D-A127-0126-EB89645B39AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
