@@ -109,6 +109,10 @@
       <Project>{53382DC1-3B0D-317D-A472-3F6AE92A681F}</Project>
       <Name>Dream Arcade.CSharp.Plugins</Name>
     </ProjectReference>
+    <ProjectReference Include="Dream Arcade.CSharp.csproj">
+      <Project>{5C4C0B52-EDF2-AB08-4E22-FE39842BDF51}</Project>
+      <Name>Dream Arcade.CSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
