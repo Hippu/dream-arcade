@@ -4,6 +4,7 @@ using System.Collections;
 public class Touch : MonoBehaviour
 {
     private Controls player;
+    private Animator animator;
 
 
     void Start()

@@ -8,7 +8,7 @@ public class Controls : MonoBehaviour
     public bool moveright;
     public bool moveleft;
 
-    private Animator animator;
+    protected Animator animator;
 
 
     void Start()
@@ -22,27 +22,51 @@ public class Controls : MonoBehaviour
     {
 
         //For keyboard:
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            rb.velocity = new Vector2(-movespeed, rb.velocity.y);
-            animator.SetInteger("Direction", 2);
-
-        }
+        //Right:
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            rb.velocity = new Vector2(movespeed, rb.velocity.y);
+            Debug.Log("Right arrow key down.");
             animator.SetInteger("Direction", 1);
-
+            rb.velocity = new Vector2(movespeed, rb.velocity.y);
         }
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            Debug.Log("Right arrow key up.");
+            animator.SetInteger("Direction", 0);
+        }
+
+        //Left:
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            Debug.Log("Left arrow key down.");
+            animator.SetInteger("Direction", 2);
+            rb.velocity = new Vector2(-movespeed, rb.velocity.y);
+        }
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            Debug.Log("Left arrow key up.");
+            animator.SetInteger("Direction", 0);
+        }
+
 
         //For touch controls:
-        if (moveright)
+        if (moveright) //Right
         {
+            Debug.Log("Right arrow touch.");
+            animator.SetInteger("Direction", 1);
             rb.velocity = new Vector2(movespeed, rb.velocity.y);
         }
-        if (moveleft)
+        if (moveleft) //Left
         {
+            Debug.Log("Left arrow touch.");
+            animator.SetInteger("Direction", 2);
             rb.velocity = new Vector2(-movespeed, rb.velocity.y);
+        }
+        //Idle
+        if (!moveleft && !moveright && !Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
+        {
+            Debug.Log("Left and right key and touch up.");
+            animator.SetInteger("Direction", 0);
         }
     }
 }
